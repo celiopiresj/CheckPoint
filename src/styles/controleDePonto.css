@@ -1,0 +1,110 @@
+:root {
+    --gray-001: #f5f5f5;
+    --gray-001-1: #ececec;
+    --gray-002: #e3e3e3;
+    --gray-003: #d5d5d5;
+    --gray-004: #777777;
+    --blue-001: #0096c7;
+    --blue-002: #1565c0;
+    --blue-003: #1308c3;
+    --blue-004: #0a04ac;
+    --green-001: #09a772;
+    --green-002: #069666;
+    font-size: 10px;
+}
+
+.container-bloco {
+    display: flex;
+    gap: 10px;
+}
+
+.container-form {
+    display: flex;
+    gap: 10px;
+}
+
+.form-funcionario:last-child {
+    padding-right: 10px;
+    border-right: 1px solid var(--gray-002);
+}
+
+.form-periodo {
+    width: 200px;
+}
+
+.form-escala input {
+    border: 0;
+    border-bottom: 2px solid var(--gray-002);
+    background-color: transparent;
+}
+
+.container-bloco.horarios {
+    display: block;
+    overflow-x: auto;
+    max-width: 1379px;
+}
+
+table {
+    width: calc(10 * 135px + 25px);
+}
+
+th, td {
+    width: 135px;
+}
+
+.novo-horario {
+    width: 25px;
+}
+
+.novo-horario .icon {
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--green-001);
+    position: relative;
+    top: 7px;
+}
+
+.novo-horario.tooltip:hover .icon {
+    border-radius: 50%;
+    color: white;
+    background-color: var(--green-001);
+}
+
+.novo-horario {
+    display: block;
+}
+
+.novo-horario .tooltip {
+    display: flex;
+    align-items: center;
+    width: 140px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 67%);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: relative;
+    top: 20px;
+    left: -50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.novo-horario.tooltip:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.acao-ponto {
+    height: 40px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    border-top: 2px solid var(--gray-002);
+}

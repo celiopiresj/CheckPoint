@@ -1,0 +1,137 @@
+:root {
+    --gray-001: #f5f5f5;
+    --gray-001-1: #ececec;
+    --gray-002: #e3e3e3;
+    --gray-003: #d5d5d5;
+    --gray-004: #777777;
+    --blue-001: #0096c7;
+    --blue-002: #1565c0;
+    --blue-003: #1308c3;
+    --blue-004: #0a04ac;
+    --green-001: #09a772;
+    --green-002: #069666;
+    font-size: 10px;
+}
+
+.container-content {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0;
+    gap: 0;
+}
+
+.container-bloco {
+    display: flex;
+    gap: 10px;
+}
+
+.titulo-content {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--gray-002);
+}
+
+.container-pagina > :not(.ativo) {
+    display: none;
+}
+
+.container-tab {
+    padding: 10px;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    width: calc(100% -20px);
+    gap: 10px;
+    border: 1px solid var(--gray-002);
+}
+
+.container-tab .tab {
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:end;
+    gap: 15px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.container-tab .tab .selection-bar {
+    height: 3px;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.container-tab .tab.ativo {
+    font-weight: bold;
+}
+
+.container-tab .tab.ativo .selection-bar {
+    background-color: var(--blue-001);
+}
+
+.pagina.cargo {
+    padding: 20px;
+}
+
+.form-pesquisa.cargo {
+    margin-bottom: 40px;
+}
+
+.add-cargo {
+    display: flex;
+    width: 160px;
+    align-items:center;
+    justify-content: space-around;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.add-cargo .icon{
+    font-size: 22px;
+}
+
+.container-bloco.cargo {
+    display: block;
+}
+
+.cargo table {
+    width: 100%;
+}
+
+.cargo table th:first-child,
+.cargo table td:first-child {
+    width: 40px; /* Largura fixa para a primeira coluna */
+}
+
+.cargo table th:nth-child(2),
+.cargo table td:nth-child(2) {
+    width: calc(100% - 40px);
+}
+
+.cargo table th:nth-child(n+3),
+.cargo table td:nth-child(n+3) {
+    width: 130px; /* Largura fixa para as colunas restantes */
+}
+
+.cargo table .icon {
+    font-size: 22px;
+}
+
+.message-box-content form{
+    height: 80px
+}
+
+.btns-add-cargo {
+    width: calc(100% - 10px);
+    border-top: 1.5px solid var(--gray-002);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px 10px 10px 0;
+    gap: 10px;
+}

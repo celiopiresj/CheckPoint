@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folha de Ponto</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+    <link rel="icon" href="../assents/icons/relogio.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/colaboradores.css">
+    <script src="../scripts/moment-with-locales.min.js"></script>
+    <script src="../scripts/menu.js" defer></script>
+    <script src="../scripts/colaboradores.js" defer></script>
+</head>
+<body>
+    <div class="container-disabled">
+        <div class="message-box">
+            <!-- <div class="message-box-barra">
+                <span class="txt">Message</span>
+                <i class="material-symbols-outlined icon">close</i>
+            </div>
+            <div class="message-box-content">
+            </div> -->
+
+            <div class="message-box-barra">
+                <span class="txt">Adicionar cargo</span>
+                <i class="material-symbols-outlined icon">close</i>
+            </div>
+            <div class="message-box-content">
+                <form>
+                    <label for="add-cargo">Cargo</label>
+                    <input id="add-cargo" type="text">
+                </form>
+                <div class="btns-add-cargo">
+                    <button type="button">Cancelar</button>
+                    <button type="button" class="btn-salvar">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app">
+        <nav class="menu-lateral">
+            <div>
+                <span class="btn-expandir-menu">
+                    <i class="material-symbols-outlined ">menu</i>
+                </span>
+            </div>
+            <ul>
+                <li class="item-menu">
+                    <a href="./controleDePonto.html">
+                        <i class="material-symbols-outlined">more_time</i>
+                        <span class="text-link">Controle de Ponto</span>
+                    </a>  
+                </li>
+                <li class="item-menu ativo">
+                    <a href="./colaboradores.html">
+                        <i class="material-symbols-outlined">groups</i>
+                        <span class="text-link">Colaboradores</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="menu-superior">
+            <span class="titulo-pagina">Colaboradores</span>
+            <i class="material-symbols-outlined relogio">schedule</i>
+        </nav>
+        <div class="content">
+            <div class="container-content">
+                <div class="container-tab">
+                    <div class="tab ativo"  data-pagina="cargo">
+                        <span class="titulo-tab">Cargos</span>
+                        <div class="selection-bar"></div>
+                    </div>
+                    <div class="tab" data-pagina="escala">
+                        <span class="titulo-tab">Escalas</span>
+                        <div class="selection-bar"></div>
+                    </div>
+                    <div class="tab"  data-pagina="colaboradores">
+                        <span class="titulo-tab">Colaboradores</span>
+                        <div class="selection-bar"></div>
+                    </div>
+                </div>
+                <div class="container-pagina">
+                    <div class="pagina cargo ativo">
+                            <form class="form-pesquisa cargo">
+                                <input placeholder="Pesquisar cargo" id="pesquisa-cargo" type="text">
+                                <label for="pesquisa-cargo"><span class="material-symbols-outlined">search</span></label>
+                            </form>
+                            <button id="btn-add-cargo" type="button" class="add-cargo">
+                                <span class="material-symbols-outlined icon">add</span>
+                                <span>Adicionar Cargo</span>
+                            </button type="button">
+                        <div class="container-bloco cargo">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>id</th>
+                                        <th>Cargo</th>
+                                        <th>Editar</th>
+                                        <th>Excluir</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td></td>
+                                        <td><span class="material-symbols-outlined icon">edit</span></td>
+                                        <td><span class="material-symbols-outlined icon">delete</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td></td>
+                                        <td><span class="material-symbols-outlined icon">
+                                            edit
+                                            </span></td>
+                                        <td><span class="material-symbols-outlined icon">
+                                            delete
+                                            </span></td>
+                                    </tr>
+                                </tbody>    
+                            </table>
+                        </div>
+                    </div>
+                    <div class="pagina escala">
+                        aa
+                    </div>
+                    <div class="pagina colaboradores">
+                        bb
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>

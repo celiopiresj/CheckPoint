@@ -1,0 +1,167 @@
+:root {
+    --gray-001: #f5f5f5;
+    --gray-001-1: #ececec;
+    --gray-002: #e3e3e3;
+    --gray-003: #d5d5d5;
+    --gray-004: #777777;
+    --blue-001: #0096c7;
+    --blue-002: #1565c0;
+    --blue-003: #1308c3;
+    --blue-004: #0a04ac;
+    --green-001: #09a772;
+    --green-002: #069666;
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--gray-001-1);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.app {
+    margin: 0;
+    border: 0;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 80px 1fr;
+    height: 100vh;
+    font-size: 1.3rem;
+}
+
+.content {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.container-content {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+input:focus, select:focus{
+    outline: none; 
+}
+
+label {
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px; 
+}
+
+input, select{
+    padding: 0px 5px 0px 5px;
+    height: 30px;
+    border: 1.6px solid var(--gray-002);
+    border-radius: 4px;
+    color: var(--gray-004);
+ }
+
+button {
+    padding: 0;
+    height: 34px;
+    width: 80px;
+    border: 2px solid var(--gray-002);
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer; 
+    color: var(--gray-004);
+}
+
+button:hover {
+    background-color: var(--gray-002);
+}
+
+.btn-salvar {
+    background-color: var( --green-001);
+    border:  2px solid var( --green-001);
+    color: white;
+}
+
+.btn-salvar:hover {
+    background-color: var(--green-002);
+}
+
+.container-pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+
+.form-pesquisa {
+    flex-direction: row;
+    color: var(--gray-004);
+    gap: 0;
+}
+
+.form-pesquisa input {
+    flex: 1;
+    width: 1fr;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.form-pesquisa label {
+    width: 35px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: 1.6px solid var(--gray-002);
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+}
+
+.form-pesquisa label:hover {
+    background-color: var(--gray-002);
+}
+
+.form-pesquisa span {
+    font-size: 2.2rem;
+}
+
+table {
+    border-spacing: 0;
+}
+
+tbody tr:nth-child(odd)  {
+    background-color: var(--gray-001);
+}
+
+th, td {
+    width: 135px;
+    text-align: center;
+    height: 40px;
+    font-size: 1.4rem;
+    padding: 0;
+}
+
+td > input {
+    width: calc(100% - 40px);
+    background-color: var(--gray-002);
+    border: none;
+}
+
+th {
+    border-top: 1px solid var(--gray-002);
+    border-bottom: 1px solid var(--gray-002);
+}
+
+td {
+    border-bottom: 1px solid var(--gray-002);
+}
+
