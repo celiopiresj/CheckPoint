@@ -135,3 +135,67 @@
     padding: 10px 10px 10px 0;
     gap: 10px;
 }
+
+.pagina.escala {
+    padding: 20px;
+}
+
+.form-pesquisa.escala {
+    margin-bottom: 40px;
+}
+
+.add-escala {
+    display: flex;
+    width: 160px;
+    align-items:center;
+    justify-content: space-around;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.add-escala .icon{
+    font-size: 22px;
+}
+
+
+.container-bloco.escala {
+    display: block;
+}
+
+.escala table {
+    width: 100%;
+}
+
+.escala table th:first-child,
+.escala table td:first-child {
+    width: 40px; /* Largura fixa para a primeira coluna */
+}
+
+.escala table th:nth-child(2),
+.escala table td:nth-child(2) {
+    width: calc(100% - 40px);
+}
+
+.escala table th:nth-child(n+3),
+.escala table td:nth-child(n+3) {
+    width: 130px; /* Largura fixa para as colunas restantes */
+}
+
+.escala table .icon {
+    font-size: 22px;
+}
+
+.message-box-content form{
+    height: 80px
+}
+
+.btns-add-escala {
+    width: calc(100% - 10px);
+    border-top: 1.5px solid var(--gray-002);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px 10px 10px 0;
+    gap: 10px;
+}
